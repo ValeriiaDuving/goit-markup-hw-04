@@ -339,8 +339,8 @@ fill: #f4f4fd;
 }
 
 .section-portfolio {
-    padding-top: 120px;
-        padding-bottom: 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -353,6 +353,15 @@ fill: #f4f4fd;
 .portfolio-image-box {
 position: relative;
 overflow: hidden;
+}
+
+.portfolio-list-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
+.portfolio-list-item:hover .portfolio-image-text {
+    transform: translateY(0%);
 }
 
 .portfolio-image-text {
@@ -376,12 +385,6 @@ overflow: hidden;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-list-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
-}
-
 
 .team-text,
 .portfolio-text {
